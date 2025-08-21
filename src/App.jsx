@@ -1,5 +1,4 @@
 import { useState } from 'react'
-// import './App.css'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { Login } from '../Pages/Login'
 import { SignUp } from '../Pages/SignUp'

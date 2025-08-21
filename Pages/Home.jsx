@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Navbar } from '../Components/Navbar'
 import { ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { SuccessToast } from '../Utils/Sucess';
