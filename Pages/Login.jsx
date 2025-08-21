@@ -25,7 +25,7 @@ export const Login = () => {
       ErrorToast("Provide All Credentials");
     }
     try {
-      const url = "http://localhost:8080/auth/login";
+      const url = "https://auth-back-1-w34c.onrender.com/auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {

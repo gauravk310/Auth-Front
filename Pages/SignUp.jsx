@@ -27,7 +27,7 @@ export const SignUp = () => {
         ErrorToast("Provide All Credentials")
       }
       try {
-        const url = 'http://localhost:8080/auth/signup';
+        const url = 'https://auth-back-1-w34c.onrender.com/auth/signup';
         const response = await fetch(url,{
           method:"POST",
           headers:{
