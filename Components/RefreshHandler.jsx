@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 export const RefreshHandler = ({setIsAuthenticated}) => {
     const location = useLocation();
     const navigate = useNavigate();
     useEffect(()=>{
-        if(localStorage.getItem('token')){
+        if(Cookies.get('token')){
             setIsAuthenticated(true);
             if(location.pathname == '/' ||
                 location.pathname=='/login' ||
